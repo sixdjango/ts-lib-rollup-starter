@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-rollup-starter",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "description": "快速创建一个JS/TS库并使用Rollup打包",
   "type": "module",
   "license": "MIT",
