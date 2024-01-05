@@ -53,6 +53,24 @@ jobs:
         with:
           directory: coverage
           token: ${{ secrets.CODECOV_TOKEN }}
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Please refer to [CHANGELOG.md](https://github.com/sixdjango/ts-lib-rollup-starter/blob/master/CHANGELOG.md) for details.
+          draft: false
+          prerelease: false
   dependabot:
     if: github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
