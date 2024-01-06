@@ -49,6 +49,8 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
+          body: |
+            Please refer to [CHANGELOG.md](https://github.com/sixdjango/ts-lib-rollup-starter/blob/master/CHANGELOG.md) for details.
 
       # 上传构建的产物到 Release
       - name: Upload Release Asset
@@ -56,8 +58,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          body: |
-            Please refer to [CHANGELOG.md](https://github.com/sixdjango/ts-lib-rollup-starter/blob/master/CHANGELOG.md) for details.
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./zipDist/bundle.zip
           asset_name: asset.zip
