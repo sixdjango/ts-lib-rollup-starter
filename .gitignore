@@ -82,7 +82,7 @@ types/
 # Nuxt.js build / generate output
 .nuxt
 dist
-zipDist
+zipDist/
 .DS_Store
 
 # Gatsby files
