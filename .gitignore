@@ -82,6 +82,8 @@ types/
 # Nuxt.js build / generate output
 .nuxt
 dist
+zipDist
+.DS_Store
 
 # Gatsby files
 .cache/

@@ -2,10 +2,12 @@ import { defineConfig } from 'rollup'
 import pkg from './package.json'
 import typescript from '@rollup/plugin-typescript'
 import terser from '@rollup/plugin-terser'
+import zipPlugin from './scripts/rollupPluginZip'
+import json from '@rollup/plugin-json'
 
 export default defineConfig({
   input: 'src/index.ts',
-  plugins: [typescript(), terser()],
+  plugins: [json(), typescript(), terser(), zipPlugin({ outputDir: 'zipDist' })],
   output: [
     {
       format: 'cjs',

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { Hello, sum } from '@/index'
+import { Hello, sum } from '~/index'
 
 describe('简单测试', () => {
   it('测试sum', () => {
