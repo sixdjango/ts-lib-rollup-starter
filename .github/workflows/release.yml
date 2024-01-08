@@ -49,6 +49,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
+          # release 发布后的描述
           body: |
             Please refer to [CHANGELOG.md](https://github.com/sixdjango/ts-lib-rollup-starter/blob/master/CHANGELOG.md) for details.
 

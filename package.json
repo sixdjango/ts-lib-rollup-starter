@@ -21,11 +21,11 @@
     },
     "./package.json": "./package.json"
   },
-  "author": "樱吹雪",
-  "homepage": "https://lib-starter-rollup.wyatex.online",
-  "repository": "Wyatex/Lib-Starter-Rollup",
+  "author": "django",
+  "homepage": "https://github.com/sixdjango",
+  "repository": "https://github.com/sixdjango/ts-lib-rollup-starter",
   "bugs": {
-    "url": "https://github.com/Wyatex/Lib-Starter-Rollup/issues"
+    "url": "https://github.com/sixdjango/ts-lib-rollup-starter/issues"
   },
   "keywords": [
     "rollup",
