@@ -1,6 +1,7 @@
 {
   "name": "ts-lib-rollup-starter",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "packageManager": "pnpm@8.15.0",
   "description": "快速创建一个JS/TS库并使用Rollup打包",
   "type": "module",
   "license": "MIT",
