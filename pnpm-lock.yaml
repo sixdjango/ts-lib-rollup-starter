@@ -31,7 +31,7 @@ devDependencies:
     version: 1.2.2(vitest@1.3.0)
   '@yc-tech/eslint-config':
     specifier: ^0.1.0
-    version: 0.1.0(prettier@3.2.5)(typescript@5.3.3)
+    version: 0.1.1(prettier@3.2.5)(typescript@5.3.3)
   archiver:
     specifier: ^6.0.1
     version: 6.0.1
@@ -1493,8 +1493,8 @@ packages:
       - vue
     dev: true
 
-  /@yc-tech/eslint-config@0.1.0(prettier@3.2.5)(typescript@5.3.3):
-    resolution: {integrity: sha512-vPumTXBFP7jijRRwBzlteQ0ZiOuoMkeWMJq8idcwvbCCME81i7zevsd52RT6FBlTy4hs2yusitq/zs6fEx5SLQ==}
+  /@yc-tech/eslint-config@0.1.1(prettier@3.2.5)(typescript@5.3.3):
+    resolution: {integrity: sha512-2dv7nXZtTuMeRICxlDRHAM+WwCSQPqkenCOOT8EGAtzBWcIwoj4ney7cIFomK+AWFAFGYJETxYzOXbBpStd5PQ==}
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 6.21.0(eslint@8.56.0)(typescript@5.3.3)
